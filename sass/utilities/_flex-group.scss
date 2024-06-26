@@ -2,12 +2,11 @@
 
 .flex-group {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  column-gap: var(--flex-column-gap, $flex-group-gap);
-  row-gap: var(--flex-row-gap, calc($flex-group-gap / 2));
-  width: fit-content;
+  gap: var(--flex-column-gap, $flex-group-gap);
 }
 
-.flex-group.mx-auto {
-  justify-content: center;
-}
+// .flex-group.mx-auto {
+//   justify-content: center;
+// }

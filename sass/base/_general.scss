@@ -1,18 +1,24 @@
 @use "../abstracts/" as *;
 
 body {
+  min-height: 100vh;
   font-family: $font-family-base;
-  font-weight: $font-weight-default;
-  font-size: $font-size-400;
-  color: $color-neutral-400;
-  background-color: $color-accent-700;
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-200;
+  color: $color-neutral-800;
+  background-color: $color-neutral-300;
   line-height: 1.5;
+  letter-spacing: 0.12px;
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
 }
 
-a {
-  color: $color-accent-300;
-}
+// a {
+//   color: $color-accent-300;
+// }
 
-a:is(:hover, :focus) {
-  color: $color-primary-300;
-}
+// a:is(:hover, :focus) {
+//   color: $color-primary-300;
+// }
