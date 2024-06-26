@@ -3,7 +3,6 @@
 .share {
   &__button {
     position: relative;
-    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +15,11 @@
     cursor: pointer;
     background-color: $color-neutral-300;
     fill: $color-neutral-800;
+    z-index: 10;
+
+    svg {
+      pointer-events: none;
+    }
 
     &[aria-expanded="true"] {
       background-color: $color-neutral-800;
